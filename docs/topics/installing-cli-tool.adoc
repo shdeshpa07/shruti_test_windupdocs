@@ -77,4 +77,33 @@ This command will copy the binary `PATH` for system-wide use.
 Although installation using Podman is possible, downloading and installing the `.zip` file is the preferred installation.
 ====
 
+[id="installing-using-shinynewtool_{context}"]
+== Installing the {CLINameTitle} using ShinyNewTool
 
+.Prerequisites
+
+Shiny New Tool requires two-factor authentication set up on your Red Hat account. Ensure you have two-factor authentication enabled and set up on your Red Hat account.
+
+.Procedure
+
+. Get the Shiny New Tool image from the registry by running the command below:
++
+[source, terminal]
+-----
+shinynewtool cp registry.redhat.com/mta-toolkit/mta-mta-cli-rhel9:{ProductVersion})
+-----
++
+This command will download the image for Shiny New Tool in the `bin` folder.
++
+. Navigate to the `bin` folder.
+. To install the {CLINameTitle} using Shiny New tool, run:
++
+[source. terminal]
+----
+shinynewtool exec 
+----
++
+[NOTE]
+====
+Navigate to your root directory to verify the installation. If you face any issues, refer link:https://redhat.com[troubleshhoting tips].
+====
